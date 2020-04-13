@@ -1,0 +1,60 @@
+<!--
+
+ @license
+ Copyright (c) {{current_year}} Cisco and/or its affiliates.
+
+ This software is licensed to you under the terms of the Cisco Sample
+ Code License, Version 1.1 (the "License"). You may obtain a copy of the
+ License at
+
+                 https://developer.cisco.com/docs/licenses
+
+ All use of the material herein must be in accordance with the terms of
+ the License. All rights not expressly granted by the License are
+ reserved. Unless required by applicable law or agreed to separately in
+ writing, software distributed under the License is distributed on an "AS
+ IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ or implied.
+
+-->
+
+<html>
+
+<head>
+    <title>DNAC DATA</title>
+    <meta http-equiv="Cache-Control" content="no-store" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js" type="text/javascript"></script>
+    <script src="wdcdata.js" type="text/javascript"></script>
+
+    <link href="http://www.cisco.com/web/fw/cisco-ui/2.0.1/dist/css/cui-standard.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="cui">
+    <div class="container container-table">
+        <div class="row vertical-center-row">
+            <div class="text-center col-md-12">
+                <h2>Getting Wireless Health from DNA Center</h2>
+            </div>
+            <div class="form-group text-center col-md-12">
+              <div class="col-md-4 offset-md-4 form-group__text" style="margin-top: 20px">
+                  <label>Filter by Device Name: </label>
+                  <input id="filter" class="hover" type="text" placeholder="Device name..." required>
+              </div>
+            </div>
+            <div class="form-group text-center col-md-12">
+              <div class="col-md-8 offset-md-2 form-group__text" style="margin-top: 20px">
+                  <label style="font-size: 12px">Leave the filter blank if you want to retrieve all devices.</label>
+              </div>
+            </div>
+            <div class="text-center col-md-12">
+                <button type="button" id="submitButton" class="btn btn-success" style="margin: 10px;">Get  Data!</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
