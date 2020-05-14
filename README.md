@@ -11,12 +11,14 @@ The "wdcdata.js" file will take the user input from "wdc.html" and call DNAC API
 
 ## Contacts
 * Alvin Lau (alvlau@cisco.com)
-* Abdelbar Aglagane (agabdelb@cisco.com)
+
 
 
 ## Solution Components
-* DNAC
-* javascript 
+* DNAC (version ...
+* javascript (version ...
+* HTML (version ...
+* DNAC REST API SDK (version  ...
 
 
 ![Journey  DNAC + Tablau](DNAC_Tableau_Journey.png)
