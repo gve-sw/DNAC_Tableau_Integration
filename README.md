@@ -16,7 +16,30 @@ The "wdcdata.js" file will take the user input from "wdc.html" and call DNAC API
 
 ## Solution Components
 * DNAC
-* javascript
+* javascript 
+
+
+![Journey  DNAC + Tablau](DNAC_Tableau_Journey.png)
+
+
+This PoV showcases the integration using DNA Center with the DNA Center Intent API, to extract information for the wireless network, store the data to have the possibility to have insights longer than 14 days and display it into customized dashboard using third party solution – Tableau as the data reporting tool.
+
+
+You  need to install a Web Data Connector to be able to store network data without constraint of time span and to use data reporting tool in place to create analytic dashboard so that operation efficiency can be enhanced.
+
+
+## Requirements
+
+
+-  DNA Center - If you do not have a  DNAC, you  can use the sandbox https://devnetsandbox.cisco.com/RM/Diagram/Index/471eb739-323e-4805-b2a6-d0ec813dc8fc?diagramType=Topology 
+
+-  Tableau : This 3rd party will be connected to the Web Data Connector WDC and should be host in your local laptop or in a server that has connectivity with the  DNAC 
+
+- HTML
+- Javascript  - The code will be run in  a local laptop or in a server that has connectivity to DNAC 
+
+![High Level Design](DNAC_Tableau_HLD.png)
+
 
 
 ## Installation
@@ -28,11 +51,14 @@ DNAC_USER = "dnac_username";
 DNAC_PASSWORD = "dnac_password";
 
 
+
 ## Usage
 
 1. Host the WDC in the server of your choice. (Using ngrok would be a quick alternative.)
 2. From Tableau, under "Connect" select "Web Data Connector".
 3. Put the URL of the WDC pointing at the "wdc.html" in the pop-up window.
+
+
 
 
 ## License
