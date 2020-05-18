@@ -15,13 +15,14 @@ The "wdcdata.js" file will take the user input from "wdc.html" and call DNAC API
 
 
 ## Solution Components
-* DNAC (version ...
-* javascript (version ...
-* HTML (version ...
-* DNAC REST API SDK (version  ...
+* DNA Center (version 1.3.1.4)
+* DNA Center Intent API (version 1.3.1.x)
+* Tableau (version 10.4 or later)
+* Tableau Javascript SDK (version 2.3.0)
+* HTML 5
 
 
-![Journey  DNAC + Tablau](DNAC_Tableau_Journey.png)
+![Journey  DNAC + Tableau](DNAC_Tableau_Journey.png)
 
 
 This PoV showcases the integration using DNA Center with the DNA Center Intent API, to extract information for the wireless network, store the data to have the possibility to have insights longer than 14 days and display it into customized dashboard using third party solution – Tableau as the data reporting tool.
@@ -33,12 +34,12 @@ You  need to install a Web Data Connector to be able to store network data witho
 ## Requirements
 
 
--  DNA Center - If you do not have a  DNAC, you  can use the sandbox https://devnetsandbox.cisco.com/RM/Diagram/Index/471eb739-323e-4805-b2a6-d0ec813dc8fc?diagramType=Topology 
+-  DNA Center - If you do not have a  DNAC, you  can use the sandbox https://devnetsandbox.cisco.com/RM/Diagram/Index/471eb739-323e-4805-b2a6-d0ec813dc8fc?diagramType=Topology
 
--  Tableau : This 3rd party will be connected to the Web Data Connector WDC and should be host in your local laptop or in a server that has connectivity with the  DNAC 
+-  Tableau : This 3rd party application will be connected to the Web Data Connector WDC and should be hosted in your local laptop or in a server that has connectivity with the  DNA Center
 
 - HTML
-- Javascript  - The code will be run in  a local laptop or in a server that has connectivity to DNAC 
+- Javascript  - The code will be run in  a local laptop or in a server that has connectivity to DNAC
 
 ![High Level Design](DNAC_Tableau_HLD.png)
 
@@ -46,11 +47,14 @@ You  need to install a Web Data Connector to be able to store network data witho
 
 ## Installation
 
-In "wdcdata.js", update your DNAC hostname, username and password
+1. Clone this repository.
+`git clone <this repo>`
 
-DNAC_HOST = "your_dnac";
-DNAC_USER = "dnac_username";
-DNAC_PASSWORD = "dnac_password";
+2. In "wdcdata.js", update your DNAC hostname, username and password
+
+DNAC_HOST = "your_dnac";<br>
+DNAC_USER = "dnac_username";<br>
+DNAC_PASSWORD = "dnac_password";<br>
 
 
 
