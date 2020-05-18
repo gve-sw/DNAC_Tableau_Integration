@@ -49,7 +49,9 @@ You  need to install a Web Data Connector to be able to store network data witho
 ## Installation
 
 1. Clone this repository.<br>
-`git clone <this repo>`
+```
+git clone <this repo>
+```
 
 2. In "wdcdata.js", update your DNAC hostname, username and password.
 ```
@@ -60,17 +62,17 @@ DNAC_PASSWORD = "dnac_password";
 
 3. Host the webpage in a server or locally on your laptop. If you proceed to host locally, you may follow the below steps.
 ```
-npm install http-server -g
-http-server wdc.html
+npm install -g http-server
+http-server ./ -p 8080
 ```
-By default, port 8080 is used. You webpage can be accessed at localhost:8080.
+  You webpage can be accessed at http://localhost:8080/wdc.html.
 
 
 ## Usage
 
-1. Host the WDC in the server of your choice. (Using ngrok would be a quick alternative.)
+1. Host the WDC in the server of your choice.
 2. From Tableau, under "Connect" select "Web Data Connector".
-3. Put the URL of the WDC pointing at the "wdc.html" in the pop-up window.
+3. Put the URL of the WDC pointing at the "wdc.html" in the pop-up window. It would be http://localhost:8080/wdc.html if you chose to host locally.
 
 
 
