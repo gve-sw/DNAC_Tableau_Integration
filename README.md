@@ -20,6 +20,7 @@ The "wdcdata.js" file will take the user input from "wdc.html" and call DNAC API
 * Tableau (version 10.4 or later)
 * Tableau Javascript SDK (version 2.3.0)
 * HTML 5
+* NodeJS (version 12.16.3 or later) if you host the webpage locally
 
 
 ![Journey  DNAC + Tableau](DNAC_Tableau_Journey.png)
@@ -47,15 +48,22 @@ You  need to install a Web Data Connector to be able to store network data witho
 
 ## Installation
 
-1. Clone this repository.
+1. Clone this repository.<br>
 `git clone <this repo>`
 
-2. In "wdcdata.js", update your DNAC hostname, username and password
+2. In "wdcdata.js", update your DNAC hostname, username and password.
+```
+DNAC_HOST = "your_dnac";
+DNAC_USER = "dnac_username";
+DNAC_PASSWORD = "dnac_password";
+```
 
-DNAC_HOST = "your_dnac";<br>
-DNAC_USER = "dnac_username";<br>
-DNAC_PASSWORD = "dnac_password";<br>
-
+3. Host the webpage in a server or locally on your laptop. If you proceed to host locally, you may follow the below steps.
+```
+npm install http-server -g
+http-server wdc.html
+```
+By default, port 8080 is used. You webpage can be accessed at localhost:8080.
 
 
 ## Usage
